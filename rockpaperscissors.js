@@ -1,10 +1,6 @@
 ////////////////////////////////////////////////
 /*   Provided Code - Please Don't Edit   */
 ////////////////////////////////////////////////
-'use strict';
-
-
-
 function getInput() {
     console.log("Please choose either 'rock', 'paper', or 'scissors'.");
     return prompt();
@@ -19,21 +15,11 @@ function randomPlay() {
         return "scissors";
     }
 }
-function getPlayerMove(move) {
-  if (move === true) {
-  }
-    else {
-    move = getInput();
-  }
-      return move;
+function getPlayerMove() {
+  return getInput();
 }
 function getComputerMove(move) {
-    if (move === true) {
-    }
-    else {
-      move = randomPlay();
-    }
-    return move;
+    return randomPlay();
 }
 
 function getWinner(playerMove,computerMove) {
